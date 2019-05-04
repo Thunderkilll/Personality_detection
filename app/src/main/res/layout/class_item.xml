@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="221dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/card_margin"
+        android:clickable="true"
+        android:elevation="3dp"
+        android:foreground="?attr/selectableItemBackground"
+        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="14dp"
+                android:text="score"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="28sp"
+                tools:layout_editor_absoluteY="110dp" />
+
+            <TextView
+                android:id="@+id/class_type"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_alignStart="@+id/score"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="37dp"
+                android:text="classe type"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="28sp"
+                tools:layout_editor_absoluteY="188dp" />
+
+            <TextView
+                android:id="@+id/xmax"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/score"
+                android:layout_alignStart="@+id/class_type"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="41dp"
+                android:text="xmax"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="28sp"
+                tools:layout_editor_absoluteY="259dp" />
+
+            <TextView
+                android:id="@+id/xmin"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_alignStart="@+id/xmax"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="-1dp"
+                android:layout_marginBottom="75dp"
+                android:text="xmin"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="28sp"
+                tools:layout_editor_absoluteY="325dp" />
+
+            <TextView
+                android:id="@+id/ymax"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="149dp"
+                android:text="ymax"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="28sp"
+                tools:layout_editor_absoluteY="393dp" />
+
+            <TextView
+                android:id="@+id/ymin"
+                android:layout_width="250dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="13dp"
+                android:text="ymin"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="28sp"
+                tools:layout_editor_absoluteY="453dp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
